@@ -9,11 +9,13 @@ public class itemManager : MonoBehaviour
     public GameObject[] glass;
     public GameObject[] coins;
     public GameObject[] ring;
+    public GameObject[] key;
     public List<Vector2> pos = new List<Vector2>();
 
     public Image coinWinner;
     public Image glassWinner;
     public Image ringWinner;
+    public Image keyWinner;
 
     // Start is called before the first frame update
     void Start()
@@ -82,6 +84,25 @@ public class itemManager : MonoBehaviour
             ring[p].transform.position = pos[n];
             pos.RemoveAt(n);
         }
+
+
+        //random winning key 
+
+        i = Random.Range(0, key.Length);
+        key[i].GetComponent<correctItem>().winningItem = true;
+        keyWinner.sprite = key[i].GetComponent<SpriteRenderer>().sprite;
+
+        foreach (GameObject item in key)
+        {
+            pos.Add(item.transform.position);
+        }
+        for (int p = 0; p < key.Length; p++)
+        {
+            int n = Random.Range(0, pos.Count);
+            key[p].transform.position = pos[n];
+            pos.RemoveAt(n);
+        }
+
 
     }
 

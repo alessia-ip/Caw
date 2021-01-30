@@ -15,8 +15,21 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public Animator anim;
 
+    public GameObject keyW;
+    public GameObject ringW;
+    public GameObject glassW;
+    public GameObject coinW;
+    public GameObject walletW;
+
+    public winCounter winCount;
+
     public pickupCheck itemPickupR;
     public pickupCheck itemPickupL;
+
+    public bool isPlayerOne;
+
+    AudioSource aud;
+    public AudioClip HONK;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +37,7 @@ public class PlayerController : MonoBehaviour
      
         pos = this.gameObject.transform.position;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
+        aud = GetComponent<AudioSource>();
 
     }
 
@@ -68,20 +82,107 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(inspect)) 
         {
+
+
+
+            //right side
+
             if(itemPickupR.item != null){
+
+                //is it the winning item?
                 if (itemPickupR.item.GetComponent<correctItem>().winningItem == true)
                 {
+
+
+
+                    if (itemPickupR.item.GetComponent<correctItem>().objectType == correctItem.objType.Coin)
+                    {
+                        coinW.SetActive(true);
+                    }
+                    if (itemPickupR.item.GetComponent<correctItem>().objectType == correctItem.objType.Wallet)
+                    {
+                        walletW.SetActive(true);
+                    }
+                    if (itemPickupR.item.GetComponent<correctItem>().objectType == correctItem.objType.Key)
+                    {
+                        keyW.SetActive(true);
+                    }
+                    if (itemPickupR.item.GetComponent<correctItem>().objectType == correctItem.objType.Glass)
+                    {
+                        glassW.SetActive(true);
+                    }
+                    if (itemPickupR.item.GetComponent<correctItem>().objectType == correctItem.objType.Ring)
+                    {
+                        ringW.SetActive(true);
+                    }
                     itemPickupR.item.SetActive(false);
                     itemPickupR.item = null;
+
+                    if (isPlayerOne == true)
+                    {
+                        winCount.p1Win += 1;
+                    }
+                    else
+                    {
+                        winCount.p2Win += 1;
+                    }
+
+                    aud.PlayOneShot(HONK);
+
                 }
             }
 
+            //left side 
+
             if (itemPickupL.item != null)
             {
+         
+                //is it the winning item?
                 if (itemPickupL.item.GetComponent<correctItem>().winningItem == true)
                 {
+
+
+
+                    if (itemPickupL.item.GetComponent<correctItem>().objectType == correctItem.objType.Coin)
+                    {
+                        coinW.SetActive(true);
+                    }
+                    if (itemPickupL.item.GetComponent<correctItem>().objectType == correctItem.objType.Wallet)
+                    {
+                        walletW.SetActive(true);
+                    }
+                    if (itemPickupL.item.GetComponent<correctItem>().objectType == correctItem.objType.Key)
+                    {
+                        keyW.SetActive(true);
+                    }
+                    if (itemPickupL.item.GetComponent<correctItem>().objectType == correctItem.objType.Glass)
+                    {
+                        glassW.SetActive(true);
+                    }
+                    if (itemPickupL.item.GetComponent<correctItem>().objectType == correctItem.objType.Ring)
+                    {
+                        ringW.SetActive(true);
+                    }
+
+
+
                     itemPickupL.item.SetActive(false);
                     itemPickupL.item = null;
+
+
+                    if (isPlayerOne == true)
+                    {
+                        winCount.p1Win += 1;
+                    }
+                    else
+                    {
+                        winCount.p2Win += 1;
+                    }
+
+
+                    aud.PlayOneShot(HONK);
+
+
                 }
             }
 
