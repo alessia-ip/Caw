@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public Animator anim;
 
+    public pickupCheck itemPickupR;
+    public pickupCheck itemPickupL;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,5 +65,27 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("walking", false);
         }
+
+        if (Input.GetKeyDown(inspect)) 
+        {
+            if(itemPickupR.item != null){
+                if (itemPickupR.item.GetComponent<correctItem>().winningItem == true)
+                {
+                    itemPickupR.item.SetActive(false);
+                    itemPickupR.item = null;
+                }
+            }
+
+            if (itemPickupL.item != null)
+            {
+                if (itemPickupL.item.GetComponent<correctItem>().winningItem == true)
+                {
+                    itemPickupL.item.SetActive(false);
+                    itemPickupL.item = null;
+                }
+            }
+
+        }
+
     }
 }

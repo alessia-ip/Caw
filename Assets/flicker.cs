@@ -11,7 +11,7 @@ public class flicker : MonoBehaviour
     SpriteRenderer spr;
 
     // Update is called once per frame
-    void Start()
+    void OnEnable()
     {
         spr = this.gameObject.GetComponent<SpriteRenderer>();
         StartCoroutine(FLICK());
