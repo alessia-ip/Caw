@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
     AudioSource aud;
     public AudioClip HONK;
 
+    public GameObject FAIL;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -130,6 +132,10 @@ public class PlayerController : MonoBehaviour
                     aud.PlayOneShot(HONK);
 
                 }
+                else
+                {
+                    FAIL.SetActive(true);
+                }
             }
 
             //left side 
@@ -183,6 +189,9 @@ public class PlayerController : MonoBehaviour
                     aud.PlayOneShot(HONK);
 
 
+                } else
+                {
+                    FAIL.SetActive(true);
                 }
             }
 
