@@ -458,7 +458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &65109811
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -650,8 +650,8 @@ GameObject:
   m_Component:
   - component: {fileID: 101234059}
   - component: {fileID: 101234058}
-  - component: {fileID: 101234057}
   - component: {fileID: 101234060}
+  - component: {fileID: 101234057}
   m_Layer: 0
   m_Name: CircleGreenGlass
   m_TagString: Pickup
@@ -659,8 +659,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &101234057
-BoxCollider2D:
+--- !u!58 &101234057
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -673,18 +673,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.94, y: 1.93}
-    newSize: {x: 1.94, y: 1.93}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.94, y: 1.93}
-  m_EdgeRadius: 0
+  m_Radius: 1
 --- !u!212 &101234058
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -797,7 +787,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0141887665, y: -0.022702217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -808,7 +798,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.98, y: 1.34}
+  m_Size: {x: 2.6451435, y: 1.0335217}
   m_EdgeRadius: 0
 --- !u!212 &118973287
 SpriteRenderer:
@@ -1733,7 +1723,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.00000023841856}
+  m_Offset: {x: -0.22, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1744,7 +1734,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 3.9999998}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!1971053207 &261156460
 SpriteShapeRenderer:
@@ -2408,6 +2398,7 @@ GameObject:
   - component: {fileID: 347828852}
   - component: {fileID: 347828851}
   - component: {fileID: 347828854}
+  - component: {fileID: 347828855}
   m_Layer: 0
   m_Name: EmptyWallet (3)
   m_TagString: Pickup
@@ -2422,7 +2413,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347828850}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2521,6 +2512,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 0
   winningItem: 0
+--- !u!68 &347828855
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347828850}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.69554555, y: -1.5968686}
+  - {x: -1.9325168, y: -0.7573793}
+  - {x: -0.6945642, y: 1.618242}
+  - {x: 1.9905752, y: 0.7404634}
+  - {x: 0.976827, y: -1.6399319}
+  - {x: 0.18054406, y: -1.2052772}
+  - {x: -0.23674259, y: -1.7452291}
+  - {x: -0.6668932, y: -1.5893164}
 --- !u!1 &351640909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,8 +2628,8 @@ GameObject:
   m_Component:
   - component: {fileID: 355092579}
   - component: {fileID: 355092578}
-  - component: {fileID: 355092577}
   - component: {fileID: 355092580}
+  - component: {fileID: 355092577}
   m_Layer: 0
   m_Name: SquareYellowGlass
   m_TagString: Pickup
@@ -2622,8 +2637,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &355092577
-BoxCollider2D:
+--- !u!68 &355092577
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2636,18 +2651,19 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.58, y: 2.68}
-    newSize: {x: 2.58, y: 2.68}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.58, y: 2.68}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.29, y: 0}
+  - {x: -0.81280756, y: 0.7870042}
+  - {x: 0.0062327385, y: 1.3090417}
+  - {x: 0.60505736, y: 0.85604304}
+  - {x: 1.1697912, y: 0.07637423}
+  - {x: 1.162895, y: -0.36858046}
+  - {x: 0.81782734, y: -0.5554274}
+  - {x: 0.5785765, y: -1.139423}
+  - {x: 0.32105145, y: -1.3243713}
+  - {x: -0.57530147, y: -0.74798524}
+  - {x: -1.2838907, y: -0.012901625}
 --- !u!212 &355092578
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2819,6 +2835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371317918}
   - component: {fileID: 371317917}
+  - component: {fileID: 371317919}
   m_Layer: 0
   m_Name: moreItems_7
   m_TagString: Untagged
@@ -2864,7 +2881,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 6443607958815769603, guid: f05ee9b34a00d7746be66f52eb56517e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2891,6 +2908,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &371317919
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371317916}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.5005095, y: -0.17156458}
+  - {x: -1.5531111, y: -0.25289154}
+  - {x: -0.8220806, y: -0.71485233}
+  - {x: 0.47165585, y: -0.7896342}
+  - {x: 1.185359, y: -0.6376934}
+  - {x: 1.50051, y: -0.1715646}
 --- !u!1001 &373509180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2991,8 +3030,8 @@ GameObject:
   - component: {fileID: 381744444}
   - component: {fileID: 381744446}
   - component: {fileID: 381744445}
-  - component: {fileID: 381744447}
   - component: {fileID: 381744448}
+  - component: {fileID: 381744447}
   m_Layer: 5
   m_Name: p1win
   m_TagString: Untagged
@@ -3066,10 +3105,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 381744443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8da158bbf4108e84b8a5ce2a5e8f4090, type: 3}
+  m_Script: {fileID: 11500000, guid: ad8bc1c93e1c2d74f828c61001af4a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNm: Controls
+  scenename: Controls
 --- !u!82 &381744448
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3454,6 +3493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 398314811}
   - component: {fileID: 398314810}
+  - component: {fileID: 398314812}
   m_Layer: 0
   m_Name: moreItems_2
   m_TagString: Untagged
@@ -3526,6 +3566,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &398314812
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398314809}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.5046883, y: -0.4224596}
+  - {x: -1.0438094, y: -0.7822838}
+  - {x: -0.1337328, y: -0.8796396}
+  - {x: 0.64289665, y: -0.692935}
+  - {x: 1.0697279, y: -0.35733414}
+  - {x: -1.504688, y: -0.4224596}
 --- !u!1 &410443863
 GameObject:
   m_ObjectHideFlags: 0
@@ -4012,8 +4074,8 @@ GameObject:
   m_Component:
   - component: {fileID: 509498085}
   - component: {fileID: 509498084}
-  - component: {fileID: 509498083}
   - component: {fileID: 509498086}
+  - component: {fileID: 509498083}
   m_Layer: 0
   m_Name: TriGreenGlass
   m_TagString: Pickup
@@ -4021,8 +4083,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &509498083
-BoxCollider2D:
+--- !u!68 &509498083
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4035,18 +4097,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.26, y: 2.64}
-    newSize: {x: 2.26, y: 2.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.26, y: 2.64}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.13, y: 0}
+  - {x: -0.3437855, y: 0.7659775}
+  - {x: 0.4010963, y: 1.0858884}
+  - {x: 0.9904653, y: 0.28402308}
+  - {x: 1.1436353, y: -0.5729939}
+  - {x: 0.93808615, y: -1.1885538}
+  - {x: 0.18376833, y: -1.106438}
+  - {x: -1.1052232, y: -0.5332914}
+  - {x: -1.1317474, y: -0.018092413}
 --- !u!212 &509498084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4139,6 +4200,7 @@ GameObject:
   - component: {fileID: 512133045}
   - component: {fileID: 512133047}
   - component: {fileID: 512133048}
+  - component: {fileID: 512133049}
   m_Layer: 0
   m_Name: EmeraldRing
   m_TagString: Pickup
@@ -4225,9 +4287,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.10964695, y: 0}
   serializedVersion: 2
-  m_Radius: 2.735
+  m_Radius: 2.8446467
 --- !u!114 &512133048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4242,6 +4304,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 3
   winningItem: 0
+--- !u!68 &512133049
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512133044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.2366736, y: 3.820842}
+  - {x: -0.23576713, y: 3.780254}
+  - {x: -1.0378644, y: 2.5024238}
+  - {x: -0.58706903, y: 2.5639904}
+  - {x: 1.9326527, y: 2.400968}
+  - {x: 2.2034044, y: 2.8412719}
+  - {x: 1.2016324, y: 3.871114}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4429,8 +4514,8 @@ GameObject:
   m_Component:
   - component: {fileID: 528301309}
   - component: {fileID: 528301308}
-  - component: {fileID: 528301307}
   - component: {fileID: 528301310}
+  - component: {fileID: 528301307}
   m_Layer: 0
   m_Name: SquareBlueGlass
   m_TagString: Pickup
@@ -4438,8 +4523,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &528301307
-BoxCollider2D:
+--- !u!68 &528301307
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4452,18 +4537,16 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.5, y: 2.77}
-    newSize: {x: 2.5, y: 2.77}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.5, y: 2.77}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.58356905, y: -0.63407993}
+  - {x: -1.2330425, y: 0.29444504}
+  - {x: -0.90582824, y: 0.84112644}
+  - {x: -0.18042517, y: 1.258749}
+  - {x: 1.3860239, y: -0.27895355}
+  - {x: 0.48654222, y: -1.1616869}
+  - {x: 0.0450356, y: -1.145175}
+  - {x: -0.56165767, y: -0.653491}
 --- !u!212 &528301308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5111,8 +5194,8 @@ GameObject:
   m_Component:
   - component: {fileID: 608096103}
   - component: {fileID: 608096102}
-  - component: {fileID: 608096101}
   - component: {fileID: 608096104}
+  - component: {fileID: 608096101}
   m_Layer: 0
   m_Name: RectBlueGlass
   m_TagString: Pickup
@@ -5120,8 +5203,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &608096101
-BoxCollider2D:
+--- !u!68 &608096101
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5134,18 +5217,16 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.29, y: 3.8}
-    newSize: {x: 1.29, y: 3.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.29, y: 3.8}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.56438595, y: -1.6632476}
+  - {x: 0.07213229, y: -1.8708316}
+  - {x: -0.6121199, y: -1.47986}
+  - {x: -0.5638594, y: 1.5176055}
+  - {x: -0.04173875, y: 1.7506067}
+  - {x: 0.24068248, y: 1.7558655}
+  - {x: 0.4807048, y: 1.3621399}
+  - {x: 0.5667455, y: -1.6387333}
 --- !u!212 &608096102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5205,7 +5286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608096100}
   m_LocalRotation: {x: -0, y: -0, z: 0.60876054, w: 0.7933541}
-  m_LocalPosition: {x: 4.79, y: -4.29, z: 0}
+  m_LocalPosition: {x: 4.762, y: -4.282, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1530331498}
@@ -5238,6 +5319,7 @@ GameObject:
   - component: {fileID: 611196660}
   - component: {fileID: 611196662}
   - component: {fileID: 611196663}
+  - component: {fileID: 611196664}
   m_Layer: 0
   m_Name: EmptyWallet
   m_TagString: Pickup
@@ -5318,7 +5400,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611196659}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -5351,6 +5433,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 0
   winningItem: 0
+--- !u!68 &611196664
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611196659}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.158254, y: -1.6480359}
+  - {x: -2.0132756, y: 0.69484746}
+  - {x: -1.3974905, y: 1.101606}
+  - {x: 0.50933546, y: 1.7431595}
+  - {x: 1.9463782, y: -0.8085138}
+  - {x: 0.40078837, y: -1.7778169}
+  - {x: -0.16981095, y: -1.2160419}
+  - {x: -1.158254, y: -1.6480359}
 --- !u!1 &617290713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5631,7 +5737,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: af51715bd873d5b4083b62e65463c148, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 5.26, y: 5.32}
@@ -6202,6 +6308,7 @@ GameObject:
   - component: {fileID: 711997730}
   - component: {fileID: 711997729}
   - component: {fileID: 711997732}
+  - component: {fileID: 711997733}
   m_Layer: 0
   m_Name: EmptyWallet (4)
   m_TagString: Pickup
@@ -6216,7 +6323,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711997728}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -6315,6 +6422,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 0
   winningItem: 0
+--- !u!68 &711997733
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711997728}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.158254, y: -1.6480359}
+  - {x: -2.0132756, y: 0.69484746}
+  - {x: -1.3974905, y: 1.101606}
+  - {x: 0.50933546, y: 1.7431595}
+  - {x: 1.9463782, y: -0.8085138}
+  - {x: 0.40078837, y: -1.7778169}
+  - {x: -0.16981095, y: -1.2160419}
+  - {x: -1.158254, y: -1.6480359}
 --- !u!1 &712707397
 GameObject:
   m_ObjectHideFlags: 0
@@ -6983,8 +7114,8 @@ GameObject:
   m_Component:
   - component: {fileID: 830883807}
   - component: {fileID: 830883806}
-  - component: {fileID: 830883805}
   - component: {fileID: 830883808}
+  - component: {fileID: 830883805}
   m_Layer: 0
   m_Name: RectYellowGlass
   m_TagString: Pickup
@@ -6992,8 +7123,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &830883805
-BoxCollider2D:
+--- !u!68 &830883805
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7006,18 +7137,20 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.14, y: 1.43}
-    newSize: {x: 4.14, y: 1.43}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.14, y: 1.43}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.07, y: 0}
+  - {x: -1.9564571, y: -0.568738}
+  - {x: -1.7445126, y: -0.62401867}
+  - {x: -0.26206493, y: -0.44773865}
+  - {x: 0.6295881, y: -0.4112568}
+  - {x: 1.7390804, y: -0.5779352}
+  - {x: 2.0421934, y: -0.23952675}
+  - {x: 1.9830694, y: 0.53004456}
+  - {x: 1.4939461, y: 0.67608833}
+  - {x: -0.6967478, y: 0.5290661}
+  - {x: -1.9399338, y: 0.3783741}
+  - {x: -2.0779932, y: 0.015167236}
 --- !u!212 &830883806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7109,6 +7242,7 @@ GameObject:
   - component: {fileID: 835219680}
   - component: {fileID: 835219679}
   - component: {fileID: 835219682}
+  - component: {fileID: 835219683}
   m_Layer: 0
   m_Name: EmptyWallet (1)
   m_TagString: Pickup
@@ -7123,7 +7257,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835219678}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -7222,6 +7356,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 0
   winningItem: 0
+--- !u!68 &835219683
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835219678}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.158254, y: -1.6480359}
+  - {x: -2.0132756, y: 0.69484746}
+  - {x: -1.3974905, y: 1.101606}
+  - {x: 0.50933546, y: 1.7431595}
+  - {x: 1.9463782, y: -0.8085138}
+  - {x: 0.40078837, y: -1.7778169}
+  - {x: -0.16981095, y: -1.2160419}
+  - {x: -1.158254, y: -1.6480359}
 --- !u!1 &837873798
 GameObject:
   m_ObjectHideFlags: 0
@@ -7786,8 +7944,8 @@ GameObject:
   - component: {fileID: 925532526}
   - component: {fileID: 925532525}
   - component: {fileID: 925532524}
-  - component: {fileID: 925532527}
   - component: {fileID: 925532528}
+  - component: {fileID: 925532527}
   m_Layer: 5
   m_Name: p2win
   m_TagString: Untagged
@@ -7861,10 +8019,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 925532523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8da158bbf4108e84b8a5ce2a5e8f4090, type: 3}
+  m_Script: {fileID: 11500000, guid: ad8bc1c93e1c2d74f828c61001af4a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNm: Controls
+  scenename: Controls
 --- !u!82 &925532528
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8134,8 +8292,8 @@ GameObject:
   m_Component:
   - component: {fileID: 942085519}
   - component: {fileID: 942085518}
-  - component: {fileID: 942085517}
   - component: {fileID: 942085520}
+  - component: {fileID: 942085517}
   m_Layer: 0
   m_Name: GunRedGlass
   m_TagString: Pickup
@@ -8143,8 +8301,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &942085517
-BoxCollider2D:
+--- !u!68 &942085517
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8157,18 +8315,18 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.65, y: 3.74}
-    newSize: {x: 2.65, y: 3.74}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.65, y: 3.74}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.983883, y: -0.4601102}
+  - {x: -0.6211546, y: 0.39459726}
+  - {x: -1.0098433, y: 0.6762724}
+  - {x: -1.1014534, y: 1.1635728}
+  - {x: -0.89642525, y: 1.5310535}
+  - {x: 0.14468089, y: 0.9887592}
+  - {x: 1.3062356, y: -0.44439143}
+  - {x: 0.10384484, y: -1.7329859}
+  - {x: -0.32498428, y: -1.2792968}
+  - {x: -0.9755478, y: -0.46804285}
 --- !u!212 &942085518
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8259,8 +8417,8 @@ GameObject:
   m_Component:
   - component: {fileID: 958372162}
   - component: {fileID: 958372161}
-  - component: {fileID: 958372160}
   - component: {fileID: 958372163}
+  - component: {fileID: 958372160}
   m_Layer: 0
   m_Name: TriYellowGlass
   m_TagString: Pickup
@@ -8268,8 +8426,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &958372160
-BoxCollider2D:
+--- !u!68 &958372160
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8282,18 +8440,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.26}
-    newSize: {x: 2.56, y: 2.26}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.56, y: 2.26}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.24854124, y: -1.1618744}
+  - {x: -1.0249012, y: -0.026080262}
+  - {x: -1.1263075, y: 1.0966666}
+  - {x: 0.36216363, y: 1.1288618}
+  - {x: 1.2287482, y: 0.9950314}
+  - {x: 1.0128784, y: 0.13385716}
+  - {x: 0.45601842, y: -0.2430439}
+  - {x: 0.19702512, y: -0.51804924}
+  - {x: -0.21976638, y: -1.2092973}
 --- !u!212 &958372161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8525,7 +8682,7 @@ MonoBehaviour:
   down: 115
   inspect: 99
   spr: {fileID: 26842722}
-  speed: 30
+  speed: 25
   anim: {fileID: 26842718}
   keyW: {fileID: 559224194}
   ringW: {fileID: 928932225}
@@ -9193,7 +9350,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000023841858, y: -0.00000023841856}
+  m_Offset: {x: -0.06, y: 0.21}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9204,7 +9361,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 3.9999998}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!1971053207 &1087321660
 SpriteShapeRenderer:
@@ -9937,7 +10094,7 @@ MonoBehaviour:
   down: 107
   inspect: 110
   spr: {fileID: 640348650}
-  speed: 30
+  speed: 25
   anim: {fileID: 640348649}
   keyW: {fileID: 391287945}
   ringW: {fileID: 1763557996}
@@ -10364,8 +10521,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1205642042}
   - component: {fileID: 1205642041}
-  - component: {fileID: 1205642040}
   - component: {fileID: 1205642043}
+  - component: {fileID: 1205642040}
   m_Layer: 0
   m_Name: RedRhombGlass
   m_TagString: Pickup
@@ -10373,8 +10530,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1205642040
-BoxCollider2D:
+--- !u!68 &1205642040
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10387,18 +10544,20 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.85, y: 3.31}
-    newSize: {x: 2.85, y: 3.31}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.85, y: 3.31}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.4249998, y: 0}
+  - {x: -0.8469865, y: 1.489789}
+  - {x: -0.2286304, y: 1.5249164}
+  - {x: 0.4536961, y: 0.6345492}
+  - {x: 0.9796324, y: 0.32136285}
+  - {x: 1.2904766, y: -0.27829733}
+  - {x: 1.1571689, y: -0.62093735}
+  - {x: 0.90289736, y: -0.81227666}
+  - {x: 0.22812808, y: -1.5094156}
+  - {x: -0.37498456, y: -1.0311959}
+  - {x: -0.7911507, y: -0.81860757}
+  - {x: -1.4562672, y: -0.015124796}
 --- !u!212 &1205642041
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10751,6 +10910,7 @@ GameObject:
   - component: {fileID: 1297495686}
   - component: {fileID: 1297495685}
   - component: {fileID: 1297495688}
+  - component: {fileID: 1297495689}
   m_Layer: 0
   m_Name: WeirdRedGlass
   m_TagString: Pickup
@@ -10765,7 +10925,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297495684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -10864,6 +11024,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 2
   winningItem: 0
+--- !u!68 &1297495689
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297495684}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.9215857, y: -0.401021}
+  - {x: -0.8717149, y: 0.22483203}
+  - {x: -0.710189, y: 1.3006074}
+  - {x: 0.45360577, y: 1.3592124}
+  - {x: 0.76448697, y: 0.9650054}
+  - {x: 1.1266025, y: 0.06590122}
+  - {x: 0.79090905, y: -0.28931817}
+  - {x: 0.24712612, y: -0.7225}
+  - {x: 0.17241026, y: -1.2633241}
+  - {x: -0.19394836, y: -1.2664622}
+  - {x: -0.9215857, y: -0.40102097}
 --- !u!1 &1298648563
 GameObject:
   m_ObjectHideFlags: 0
@@ -10925,7 +11112,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000023841858, y: -0.00000023841856}
+  m_Offset: {x: 0.22, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10936,7 +11123,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 3.9999998}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!1971053207 &1298648567
 SpriteShapeRenderer:
@@ -11106,7 +11293,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.03, y: -0.02}
   serializedVersion: 2
   m_Radius: 1.86
 --- !u!212 &1312693879
@@ -12621,7 +12808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12930,8 +13117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1571327296}
   - component: {fileID: 1571327295}
-  - component: {fileID: 1571327294}
   - component: {fileID: 1571327297}
+  - component: {fileID: 1571327294}
   m_Layer: 0
   m_Name: CircleBlueGlass
   m_TagString: Pickup
@@ -12939,8 +13126,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1571327294
-BoxCollider2D:
+--- !u!58 &1571327294
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12953,18 +13140,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.97, y: 1.85}
-    newSize: {x: 1.97, y: 1.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.97, y: 1.85}
-  m_EdgeRadius: 0
+  m_Radius: 1.02
 --- !u!212 &1571327295
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13181,7 +13358,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.00000023841856}
+  m_Offset: {x: -1.0375583, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13192,7 +13369,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 3.9999998}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!1971053207 &1604286947
 SpriteShapeRenderer:
@@ -14174,6 +14351,7 @@ GameObject:
   - component: {fileID: 1735844822}
   - component: {fileID: 1735844821}
   - component: {fileID: 1735844824}
+  - component: {fileID: 1735844825}
   m_Layer: 0
   m_Name: EmptyWallet (2)
   m_TagString: Pickup
@@ -14188,7 +14366,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735844820}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -14287,6 +14465,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 0
   winningItem: 0
+--- !u!68 &1735844825
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735844820}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.69554555, y: -1.5968686}
+  - {x: -1.9325168, y: -0.7573793}
+  - {x: -0.6945642, y: 1.618242}
+  - {x: 1.9905752, y: 0.7404634}
+  - {x: 0.976827, y: -1.6399319}
+  - {x: 0.18054406, y: -1.2052772}
+  - {x: -0.23674259, y: -1.7452291}
+  - {x: -0.6668932, y: -1.5893164}
 --- !u!1001 &1736943336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15042,6 +15244,7 @@ GameObject:
   - component: {fileID: 1851603189}
   - component: {fileID: 1851603191}
   - component: {fileID: 1851603192}
+  - component: {fileID: 1851603193}
   m_Layer: 0
   m_Name: AmethystRing
   m_TagString: Pickup
@@ -15145,6 +15348,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 3
   winningItem: 0
+--- !u!68 &1851603193
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851603188}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.89696765, y: 3.4847114}
+  - {x: 1.8075035, y: 3.6958792}
+  - {x: 1.4008722, y: 2.3710222}
+  - {x: -1.0310677, y: 2.1760426}
+  - {x: -0.9145911, y: 3.4841368}
 --- !u!1001 &1866899759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15590,6 +15814,7 @@ GameObject:
   - component: {fileID: 1941165557}
   - component: {fileID: 1941165556}
   - component: {fileID: 1941165559}
+  - component: {fileID: 1941165560}
   m_Layer: 0
   m_Name: FullWallet
   m_TagString: Pickup
@@ -15604,7 +15829,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941165555}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -15703,6 +15928,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 0
   winningItem: 1
+--- !u!68 &1941165560
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941165555}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.69554555, y: -1.5968686}
+  - {x: -1.434977, y: -1.2505331}
+  - {x: -1.9325168, y: -0.7573793}
+  - {x: -0.53345776, y: 1.7823089}
+  - {x: 0.8198624, y: 1.3521993}
+  - {x: 1.9905752, y: 0.7404634}
+  - {x: 1.5486768, y: -0.8796063}
+  - {x: 0.976827, y: -1.6399319}
+  - {x: 0.18054406, y: -1.2052772}
+  - {x: -0.23674259, y: -1.7452291}
+  - {x: -0.6668932, y: -1.5893164}
 --- !u!1001 &1948299204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16514,6 +16766,7 @@ GameObject:
   - component: {fileID: 2048529111}
   - component: {fileID: 2048529113}
   - component: {fileID: 2048529114}
+  - component: {fileID: 2048529115}
   m_Layer: 0
   m_Name: DiamondRing
   m_TagString: Pickup
@@ -16617,6 +16870,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 3
   winningItem: 0
+--- !u!68 &2048529115
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048529110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.9371902, y: 2.1395419}
+  - {x: 1.2551298, y: 1.9443963}
+  - {x: 1.7457885, y: 1.9081235}
+  - {x: 1.9416614, y: 2.5319176}
+  - {x: 2.393148, y: 3.70891}
+  - {x: 0.86664397, y: 4.238168}
+  - {x: -0.89449644, y: 3.952781}
+  - {x: -0.9349086, y: 2.2732651}
 --- !u!1 &2054353230
 GameObject:
   m_ObjectHideFlags: 0
@@ -16627,6 +16904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2054353232}
   - component: {fileID: 2054353231}
+  - component: {fileID: 2054353233}
   m_Layer: 0
   m_Name: moreItems_1
   m_TagString: Untagged
@@ -16699,6 +16977,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -36.522003}
+--- !u!70 &2054353233
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054353230}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.41, y: 2.3}
+  m_Direction: 1
 --- !u!4 &2063580054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7851272964508758499, guid: e861133c33f6e3a42a06af2850369e33,
@@ -17128,6 +17422,7 @@ GameObject:
   - component: {fileID: 2119043516}
   - component: {fileID: 2119043518}
   - component: {fileID: 2119043519}
+  - component: {fileID: 2119043520}
   m_Layer: 0
   m_Name: AmberRing
   m_TagString: Pickup
@@ -17231,3 +17526,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 3
   winningItem: 0
+--- !u!68 &2119043520
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119043515}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.0903392, y: 4.018839}
+  - {x: -0.4903181, y: 4.090788}
+  - {x: -1.0836396, y: 2.966246}
+  - {x: -0.9749174, y: 2.6654487}
+  - {x: -0.8930743, y: 2.4113035}
+  - {x: 1.9606264, y: 1.9730257}
+  - {x: 1.112582, y: 4.0188384}

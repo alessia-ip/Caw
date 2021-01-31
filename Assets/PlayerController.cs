@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("walking", true);
         }
 
-        if (Input.anyKey != true)
+        if (!Input.GetKey(down) && !Input.GetKey(up) && !Input.GetKey(left) && !Input.GetKey(right))
         {
             anim.SetBool("walking", false);
         }
