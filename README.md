@@ -19,3 +19,5 @@ This seed is based on clock time, so it is fairly randomized each round.
 
 This game can be downloaded on itch.io at: (https://alessiaip.itch.io/tiny-birds-treasures)[https://alessiaip.itch.io/tiny-birds-treasures]
 
+# A big thank you to Jordan for playtesting! 
+Please ignore the in game credits - I had a brainfart while adding in the text, and forgot to fix it before the Jam ended!!
